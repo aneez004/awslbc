@@ -17028,9 +17028,9 @@ spec:
           - --dynamic-serving-ca-secret-name=cert-manager-webhook-ca
           - --dynamic-serving-dns-names=cert-manager-webhook,cert-manager-webhook.cert-manager,cert-manager-webhook.cert-manager.svc
           ports:
-          - name: https
+          - containerPort: 10250
             protocol: TCP
-            containerPort: 10250
+            
           livenessProbe:
             httpGet:
               path: /livez
