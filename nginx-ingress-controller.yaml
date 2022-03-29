@@ -334,6 +334,7 @@ subjects:
 apiVersion: v1
 data:
   allow-snippet-annotations: "true"
+  enable-underscores-in-headers: "true"
 kind: ConfigMap
 metadata:
   labels:
